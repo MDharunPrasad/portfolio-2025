@@ -7,7 +7,6 @@ import { GlassButton, GlassSkillCard, GlassFilter } from "@/components/ui/liquid
 import { LiquidButton } from "@/components/ui/liquid-glass-button";
 import { Balloons } from "@/components/ui/balloons";
 import { Button } from "@/components/ui/button";
-import { CustomCursor } from "@/components/ui/custom-cursor";
 import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Cloud, Globe, Smartphone, Palette, ArrowDown } from "lucide-react";
 import { useRef } from "react";
 
@@ -21,10 +20,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden cursor-none">
-      {/* Custom Among Us Cursor */}
-      <CustomCursor />
-      
+    <div className="min-h-screen relative overflow-hidden">
       {/* Glass Filter for liquid glass effects */}
       <GlassFilter />
       
