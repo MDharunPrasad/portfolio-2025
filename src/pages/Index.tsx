@@ -67,7 +67,7 @@ const Index = () => {
                     Software Engineer / Full Stack Developer
                   </h2>
                   <p className="text-lg text-gray-600 mt-2">
-                    21 AGE, TAMILNADU, INDIA
+                    21 - TAMILNADU, INDIA
                   </p>
                 </motion.div>
               </div>
@@ -94,16 +94,17 @@ const Index = () => {
             <div className="text-center">
               <h2 className="text-4xl font-bold text-gray-900 mb-16">Skills & Technologies</h2>
               
-              {/* Professional Bento Grid Layout */}
-              <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                {/* Programming - Large Card */}
-                <div className="md:col-span-2 lg:col-span-3 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
+              {/* Bento Grid Layout - 3 columns top, 2 columns bottom */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                {/* Top Row - 3 cards */}
+                {/* Programming - Card 1 */}
+                <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 h-fit">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                     <Code2 className="w-5 h-5 text-blue-600" />
                     Programming
                   </h3>
                   <div className="grid grid-cols-2 gap-3">
-                    {["Java", "HTML5", "CSS3", "JavaScript", "React.js", "SQL", "Express.js", "Kaboom.js"].map((skill, index) => (
+                    {["Java", "HTML5", "CSS3", "JavaScript", "React.js", "SQL", "Express.js", "Kaboom.js"].map((skill) => (
                       <div
                         key={skill}
                         className="px-3 py-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-800 rounded-xl text-xs font-semibold border border-blue-200/50 text-center transition-all cursor-default"
@@ -114,14 +115,14 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* Designing - Medium Card */}
-                <div className="md:col-span-2 lg:col-span-2 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
+                {/* Designing - Card 2 */}
+                <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 h-fit">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                     <Palette className="w-5 h-5 text-purple-600" />
                     Designing
                   </h3>
                   <div className="grid grid-cols-2 gap-2">
-                    {["Wireframes", "Canva", "Figma", "Prototyping", "UI/UX", "Logo Design", "Banner Design", "Graphic Design", "Thumbnail Designs"].map((tool, index) => (
+                    {["Wireframes", "Canva", "Figma", "Prototyping", "UI/UX", "Logo Design", "Banner Design", "Graphic Design", "Thumbnail Designs"].map((tool) => (
                       <div
                         key={tool}
                         className="px-3 py-2 bg-gradient-to-r from-purple-50 to-purple-100 text-purple-800 rounded-xl text-xs font-semibold border border-purple-200/50 text-center transition-all cursor-default"
@@ -132,14 +133,14 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* Tools - Small Card */}
-                <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
+                {/* Tools - Card 3 */}
+                <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 h-fit">
                   <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <Database className="w-4 h-4 text-green-600" />
                     Tools
                   </h3>
-                  <div className="space-y-3">
-                    {["Git", "GitHub", "Vibe Coding Tools"].map((tool, index) => (
+                  <div className="grid grid-cols-1 gap-3">
+                    {["Git", "GitHub", "Vibe Coding Tools"].map((tool) => (
                       <div
                         key={tool}
                         className="px-3 py-2 bg-gradient-to-r from-green-50 to-green-100 text-green-800 rounded-lg text-xs font-semibold border border-green-200/50 text-center transition-all cursor-default"
@@ -150,14 +151,15 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* Beyond Coding - Medium Card */}
-                <div className="md:col-span-2 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
+                {/* Bottom Row - 2 cards centered */}
+                {/* Beyond Coding - Card 4 */}
+                <div className="lg:col-start-1 lg:col-span-1 md:col-span-1 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 h-fit lg:justify-self-end lg:w-full lg:max-w-sm">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                     <Globe className="w-5 h-5 text-orange-600" />
                     Beyond Coding
                   </h3>
                   <div className="grid grid-cols-2 gap-2">
-                    {["Philosophy", "Psychology", "Editing", "Photo-Videography", "Content Creation", "Typing", "Passionate about Tech"].map((tool, index) => (
+                    {["Philosophy", "Psychology", "Editing", "Photo-Videography", "Content Creation", "Typing", "Passionate about Tech"].map((tool) => (
                       <div
                         key={tool}
                         className="px-3 py-2 bg-gradient-to-r from-orange-50 to-orange-100 text-orange-800 rounded-xl text-xs font-semibold border border-orange-200/50 text-center transition-all cursor-default"
@@ -168,14 +170,14 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* Interpersonal Skills - Medium Card */}
-                <div className="md:col-span-2 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
+                {/* Interpersonal Skills - Card 5 */}
+                <div className="lg:col-start-3 lg:col-span-1 md:col-span-1 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 h-fit lg:justify-self-start lg:w-full lg:max-w-sm">
                   <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <Smartphone className="w-4 h-4 text-pink-600" />
                     Interpersonal Skills
                   </h3>
                   <div className="grid grid-cols-2 gap-3">
-                    {["Empathy", "Storytelling", "Communication", "Leadership & Management"].map((skill, index) => (
+                    {["Empathy", "Storytelling", "Communication", "Leadership & Management"].map((skill) => (
                       <div
                         key={skill}
                         className="px-3 py-2 bg-gradient-to-r from-pink-50 to-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-200/50 text-center transition-all cursor-default"
@@ -279,7 +281,7 @@ const Index = () => {
               ].map((project, index) => (
                 <div
                   key={project.title}
-                  className={`group relative bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20 transition-all duration-300 ${
+                  className={`bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20 transition-all duration-300 ${
                     project.featured ? 'ring-2 ring-blue-500/20' : ''
                   }`}
                 >
@@ -290,7 +292,7 @@ const Index = () => {
                   )}
                   
                   <div className="mb-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">
                       {project.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">{project.desc}</p>
@@ -300,7 +302,7 @@ const Index = () => {
                     {project.tech.map((tech) => (
                       <span 
                         key={tech} 
-                        className="px-3 py-1.5 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 rounded-full text-xs font-semibold border border-blue-200/50 hover:from-blue-100 hover:to-blue-200 transition-all"
+                        className="px-3 py-1.5 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-700 rounded-full text-xs font-semibold border border-blue-200/50"
                       >
                         {tech}
                       </span>
@@ -312,18 +314,18 @@ const Index = () => {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors group/link"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
                     >
-                      <ExternalLink size={16} className="group-hover/link:translate-x-0.5 transition-transform" />
+                      <ExternalLink size={16} />
                       Live Demo
                     </a>
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-600 hover:text-gray-800 font-semibold text-sm transition-colors group/link"
+                      className="flex items-center gap-2 text-gray-600 hover:text-gray-800 font-semibold text-sm transition-colors"
                     >
-                      <Github size={16} className="group-hover/link:scale-110 transition-transform" />
+                      <Github size={16} />
                       Code
                     </a>
                   </div>

@@ -10,16 +10,20 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
-    <div className="flex justify-center w-full py-2 px-6 fixed top-2 z-40">
-      <div className="flex items-center justify-between px-6 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-sm border border-gray-100 w-full max-w-3xl relative z-10">
+    <div className="flex justify-center w-full py-4 px-6 fixed top-4 z-40">
+      <div className="flex items-center justify-between px-6 py-3 bg-white/90 backdrop-blur-sm rounded-full shadow-sm border border-gray-100 w-full max-w-3xl relative z-10">
         {/* Logo */}
         <div className="flex items-center">
-          <div className="w-6 h-6 mr-2">
+          <div className="w-6 h-6 mr-2 cursor-pointer" onClick={scrollToTop}>
             <img 
               src="/lovable-uploads/fe26917a-a6d1-4a53-bea0-f26ac34227c4.png" 
               alt="Logo" 
-              className="w-6 h-6 rounded-full"
+              className="w-6 h-6 rounded-full hover:opacity-80 transition-opacity"
             />
           </div>
         </div>
