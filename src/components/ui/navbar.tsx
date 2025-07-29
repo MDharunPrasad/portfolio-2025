@@ -11,15 +11,15 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <div className="flex justify-center w-full py-1.5 px-6 fixed top-0 z-40">
-      <div className="flex items-center justify-between px-4 py-1.5 bg-white/90 backdrop-blur-sm rounded-full shadow-sm border border-gray-100 w-full max-w-4xl relative z-10">
+    <div className="flex justify-center w-full py-4 px-6 fixed top-0 z-40">
+      <div className="flex items-center justify-between px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full shadow-sm border border-gray-100 w-full max-w-4xl relative z-10">
         {/* Logo */}
         <div className="flex items-center">
-          <div className="w-7 h-7 mr-3">
+          <div className="w-5 h-5 mr-2">
             <img 
               src="/lovable-uploads/fe26917a-a6d1-4a53-bea0-f26ac34227c4.png" 
               alt="Logo" 
-              className="w-7 h-7 rounded-full"
+              className="w-5 h-5 rounded-full"
             />
           </div>
         </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4">
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-3 py-1.5 text-sm text-white bg-gray-900 rounded-full hover:bg-gray-700 transition-colors"
+            className="inline-flex items-center justify-center px-2 py-1 text-xs text-white bg-gray-900 rounded-full hover:bg-gray-700 transition-colors"
           >
             Get in Touch
           </a>
