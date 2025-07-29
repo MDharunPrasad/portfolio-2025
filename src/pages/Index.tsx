@@ -67,7 +67,7 @@ const Index = () => {
                     Software Engineer / Full Stack Developer
                   </h2>
                   <p className="text-lg text-gray-600 mt-2">
-                    21 age, tamilnadu india
+                    21 AGE, TAMILNADU, INDIA
                   </p>
                 </motion.div>
               </div>
@@ -94,10 +94,10 @@ const Index = () => {
             <div className="text-center">
               <h2 className="text-4xl font-bold text-gray-900 mb-16">Skills & Technologies</h2>
               
-              {/* Professional Grid Layout - 5 Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+              {/* Professional Bento Grid Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {/* Programming - Large Card */}
-                <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300">
+                <div className="md:col-span-2 lg:col-span-3 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                     <Code2 className="w-5 h-5 text-blue-600" />
                     Programming
@@ -106,7 +106,7 @@ const Index = () => {
                     {["Java", "HTML5", "CSS3", "JavaScript", "React.js", "SQL", "Express.js", "Kaboom.js"].map((skill, index) => (
                       <div
                         key={skill}
-                        className="px-3 py-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-800 rounded-xl text-xs font-semibold border border-blue-200/50 text-center hover:from-blue-100 hover:to-blue-200 transition-all cursor-default"
+                        className="px-3 py-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-800 rounded-xl text-xs font-semibold border border-blue-200/50 text-center transition-all cursor-default"
                       >
                         {skill}
                       </div>
@@ -115,7 +115,7 @@ const Index = () => {
                 </div>
 
                 {/* Designing - Medium Card */}
-                <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300">
+                <div className="md:col-span-2 lg:col-span-2 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                     <Palette className="w-5 h-5 text-purple-600" />
                     Designing
@@ -124,7 +124,7 @@ const Index = () => {
                     {["Wireframes", "Canva", "Figma", "Prototyping", "UI/UX", "Logo Design", "Banner Design", "Graphic Design", "Thumbnail Designs"].map((tool, index) => (
                       <div
                         key={tool}
-                        className="px-3 py-2 bg-gradient-to-r from-purple-50 to-purple-100 text-purple-800 rounded-xl text-xs font-semibold border border-purple-200/50 text-center hover:from-purple-100 hover:to-purple-200 transition-all cursor-default"
+                        className="px-3 py-2 bg-gradient-to-r from-purple-50 to-purple-100 text-purple-800 rounded-xl text-xs font-semibold border border-purple-200/50 text-center transition-all cursor-default"
                       >
                         {tool}
                       </div>
@@ -133,16 +133,16 @@ const Index = () => {
                 </div>
 
                 {/* Tools - Small Card */}
-                <div className="bg-white/80 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <Database className="w-4 h-4 text-green-600" />
                     Tools
                   </h3>
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     {["Git", "GitHub", "Vibe Coding Tools"].map((tool, index) => (
                       <div
                         key={tool}
-                        className="px-2 py-1.5 bg-gradient-to-r from-green-50 to-green-100 text-green-800 rounded-lg text-xs font-semibold border border-green-200/50 text-center hover:from-green-100 hover:to-green-200 transition-all cursor-default"
+                        className="px-3 py-2 bg-gradient-to-r from-green-50 to-green-100 text-green-800 rounded-lg text-xs font-semibold border border-green-200/50 text-center transition-all cursor-default"
                       >
                         {tool}
                       </div>
@@ -151,7 +151,7 @@ const Index = () => {
                 </div>
 
                 {/* Beyond Coding - Medium Card */}
-                <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300">
+                <div className="md:col-span-2 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
                     <Globe className="w-5 h-5 text-orange-600" />
                     Beyond Coding
@@ -160,7 +160,7 @@ const Index = () => {
                     {["Philosophy", "Psychology", "Editing", "Photo-Videography", "Content Creation", "Typing", "Passionate about Tech"].map((tool, index) => (
                       <div
                         key={tool}
-                        className="px-3 py-2 bg-gradient-to-r from-orange-50 to-orange-100 text-orange-800 rounded-xl text-xs font-semibold border border-orange-200/50 text-center hover:from-orange-100 hover:to-orange-200 transition-all cursor-default"
+                        className="px-3 py-2 bg-gradient-to-r from-orange-50 to-orange-100 text-orange-800 rounded-xl text-xs font-semibold border border-orange-200/50 text-center transition-all cursor-default"
                       >
                         {tool}
                       </div>
@@ -169,16 +169,16 @@ const Index = () => {
                 </div>
 
                 {/* Interpersonal Skills - Medium Card */}
-                <div className="bg-white/80 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <div className="md:col-span-2 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <Smartphone className="w-4 h-4 text-pink-600" />
                     Interpersonal Skills
                   </h3>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-2 gap-3">
                     {["Empathy", "Storytelling", "Communication", "Leadership & Management"].map((skill, index) => (
                       <div
                         key={skill}
-                        className="px-2 py-1.5 bg-gradient-to-r from-pink-50 to-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-200/50 text-center hover:from-pink-100 hover:to-pink-200 transition-all cursor-default"
+                        className="px-3 py-2 bg-gradient-to-r from-pink-50 to-pink-100 text-pink-800 rounded-lg text-xs font-semibold border border-pink-200/50 text-center transition-all cursor-default"
                       >
                         {skill}
                       </div>
@@ -279,7 +279,7 @@ const Index = () => {
               ].map((project, index) => (
                 <div
                   key={project.title}
-                  className={`group relative bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 ${
+                  className={`group relative bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20 transition-all duration-300 ${
                     project.featured ? 'ring-2 ring-blue-500/20' : ''
                   }`}
                 >
