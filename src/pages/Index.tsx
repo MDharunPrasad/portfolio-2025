@@ -89,7 +89,7 @@ const Index = () => {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-20 px-4">
+        <section id="skills" className="py-12 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center">
               <h2 className="text-4xl font-bold text-gray-900 mb-16">Skills & Technologies</h2>
@@ -265,18 +265,18 @@ const Index = () => {
                   github: "https://github.com/MDharunPrasad/edu-gear"
                 },
                 {
-                  title: "Personal Design",
-                  desc: "UI/UX design portfolio showcase",
+                  title: "Coffee Estate Project",
+                  desc: "Coffee estate management system design",
                   tech: ["Figma", "UI/UX Design"],
                   live: "https://www.figma.com/design/m9O9RUY7Y6HmO4mRbsm3Nd/Personal?node-id=168-20&t=3xsslltiTnOVX1mJ-1",
-                  github: "#"
+                  github: null
                 },
                 {
-                  title: "Giglabs Design",
-                  desc: "Corporate design system & branding",
-                  tech: ["Figma", "Branding", "Design System"],
+                  title: "POS System Project",
+                  desc: "Point of sale system interface design",
+                  tech: ["Figma", "Branding"],
                   live: "https://www.figma.com/design/3m2VOPwwq0O69S4WTWZtJq/Giglabs?node-id=0-1&t=Tifk8bVoic34lCrq-1",
-                  github: "#"
+                  github: null
                 }
               ].map((project, index) => (
                 <div
@@ -309,26 +309,28 @@ const Index = () => {
                     ))}
                   </div>
                   
-                  <div className="flex gap-4">
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
-                    >
-                      <ExternalLink size={16} />
-                      Live Demo
-                    </a>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-600 hover:text-gray-800 font-semibold text-sm transition-colors"
-                    >
-                      <Github size={16} />
-                      Code
-                    </a>
-                  </div>
+                   <div className="flex gap-4">
+                     <a
+                       href={project.live}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm transition-colors"
+                     >
+                       <ExternalLink size={16} />
+                       Live Demo
+                     </a>
+                     {project.github && (
+                       <a
+                         href={project.github}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         className="flex items-center gap-2 text-gray-600 hover:text-gray-800 font-semibold text-sm transition-colors"
+                       >
+                         <Github size={16} />
+                         Code
+                       </a>
+                     )}
+                   </div>
                 </div>
               ))}
             </div>
